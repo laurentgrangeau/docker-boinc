@@ -1,0 +1,1 @@
+This is a Boinc image with the latest BOinc client for WorldCommunityGrid
