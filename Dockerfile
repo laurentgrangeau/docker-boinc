@@ -4,10 +4,10 @@ MAINTAINER Laurent Grangeau <laurent.grangeau@gmail.com>
 
 # Set some env variables
 ENV DEBIAN_FRONTEND noninteractive
-ENV BOINC_CLIENT 7.4.23+dfsg-2
+ENV BOINC_VERSION 7.4.23+dfsg-2
 
 # Update and install minimal.
-RUN apt-get update && apt-get install --yes --no-install-recommends --no-install-suggests boinc-client=${BOINC_CLIENT} && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install --yes --no-install-recommends --no-install-suggests boinc-client=${BOINC_VERSION} && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Data volume
 ONBUILD VOLUME /data
